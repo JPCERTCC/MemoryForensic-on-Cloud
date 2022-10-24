@@ -1,33 +1,3 @@
-# Memory Forensic on Cloud
-
-This repository is a PoC for memory forensic on AWS.
-
-![flow](images/flow.png)
-
-## Support OS
-
-This system only supports memory forensics on Windows OS.
-
-## Requirements Service
-
-Get an account for the following services.
-
-* AWS
-* GitHub
-
-## How to Use
-
-### Clone or Fork This Repository
-
-```bash
-$ git clone https://github.com/JPCERTCC/MemoryForensic-on-Cloud.git
-```
-
-### Setup Configuration
-
-#### variables.tf
-
-```python
 # Region to build the system
 variable "region" {
   default = "us-east-1"
@@ -87,19 +57,3 @@ variable "aws_secret_access_key" {
 variable "sns_email" {
   default = ""
 }
-
-
-```
-
-### Setup GitHub Actions
-
-Set GitHub Actions secrets.
-
-* AWS_ACCESS_KEY_ID
-* AWS_SECRET_ACCESS_KEY
-* AWS_ACCOUNT_NUMBER
-* AWS_REGION
-
-How to use GitHub Actions secrets. https://docs.github.com/en/actions/security-guides/encrypted-secrets
-
-Finally, commit the repository to GitHub.
