@@ -6,9 +6,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket  = "memory-analysis-tfstate-s3"
+    bucket  = "analysis-tfstate-s3"
     key     = "terraform.tfstate"
-    region  = "us-east-2"
+    region  = "us-east-1"
     encrypt = true
   }
 }
